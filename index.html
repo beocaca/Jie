@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
     <link rel="stylesheet" href="src/rs.scss">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
           integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
           crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
           integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
           crossorigin="anonymous"/>
-
-
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+          crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"></script>
+    <script>
+        new WOW({
+            animateClass: 'animate__animated', // default
+        }).init();
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nammmmm</title>
 </head>
 <body>
 <div class="header">
@@ -47,8 +49,8 @@
 </div>
 
 <div class="inwrap">
-    <div class="inwrap__left ">
-        <div class="intro animate__animated animate__fadeInUp">
+    <div class="inwrap__left  wow animate__fadeInUp ">
+        <div class="intro">
             <h1 class="intro__headline">
                 <span class="color-1"> Boost revenue </span>
                 <br>
@@ -75,8 +77,8 @@
                 us</a> for further info</p>
         </div>
     </div>
-    <div class="inwrap__right">
-        <div class="carousel animate__animated animate__fadeInRightBig">
+    <div class="inwrap__right wow animate__fadeInRight" data-wow-duration="1.5s">
+        <div class="carousel " data-wow-offset="">
             <div class="carousel__pic">
                 <img src="https://www.persoo.ai/images/intro/clothing.jpg" alt="">
             </div>
@@ -236,9 +238,10 @@
         </div>
     </div>
 </div>
+
 <div class="section">
     <div class="container">
-        <div class="logos animate__animated animate__bounceInLeft">
+        <div class="logos wow animate__bounceInUp" data-wow-offset="300" data-wow-duration="2s">
             <a href="" class="logos__link">
             <span class="logo__link__big"> 
                 Jion 100+
@@ -276,7 +279,7 @@
 <div class="section">
     <div class="container">
         <div class="howit">
-            <div CLASS="icon-sml">
+            <div class="icon-sml wow animate__pulse" data-wow-iteration="100">
                 <svg viewBox="0 0 40 40" id="sprite--smile-1" xmlns="http://www.w3.org/2000/svg">
                     <g fill-rule="nonzero" fill="none">
                         <circle fill="#FFCA28" cx="20" cy="20" r="20"></circle>
@@ -292,17 +295,17 @@
             <h1>Three steps to boost your revenue
             </h1>
         </div>
-        <div class="steps">
+        <div class="steps " data-wow-offset="300">
             <div class="steps__img">
-                <img class="steps__img__img animate__animated animate__bounce step__img__img-active l1"
+                <img class="steps__img__img animate__animated animate__slideInDown  step__img__img-active l1"
                      src="https://www.persoo.ai/images/steps/step-1.png"
                      alt="">
-                <img class="steps__img__img animate__animated animate__tada l2"
+                <img class="steps__img__img animate__animated animate__slideInLeft l2"
                      src="https://www.persoo.ai/images/steps/step-2.png" alt="">
-                <img class="steps__img__img animate__animated animate__flipInX l3"
+                <img class="steps__img__img animate__animated animate__slideInUp l3"
                      src="https://www.persoo.ai/images/steps/step-3.png" alt="">
             </div>
-            <div class="steps__points">
+            <div class="steps__points wow animate__slideInUp">
                 <div x="l1" class="step step--active">
                     <div class="step__number">
                         <div class="step__number__box">
@@ -386,7 +389,7 @@
                 </a>
             </div>
             <div class="csplit__right">
-                <div class="cards animate__animated animate__fadeInUp">
+                <div class="cards wow animate__fadeInUp" data-wow-offset="150">
                     <div class="cards__left">
                         <div class="card">
                             <div class="card__img-wrapper">
@@ -452,62 +455,6 @@
         </div>
     </div>
 </div>
-
-<div>
-    <div class="divider">
-        <div class="divider__left">
-        </div>
-        <div class="divider__right">
-        </div>
-    </div>
-    <div class="bgc-tim">
-        <div class="container">
-            <div class="service">
-                <div class="service__left">
-                    <div class="service__left-icon">
-                        <svg viewBox="0 0 40 40" id="sprite--smile-2" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <g>
-                                    <path d="M39.961 20.02c0 11.034-8.945 19.98-19.98 19.98S.001 31.054.001 20.02C0 8.983 8.946.038 19.98.038s19.98 8.945 19.98 19.98z"
-                                          fill="#FFCA28" mask="url(#bgb)"></path>
-                                </g>
-                                <path d="M31.22 15.024a2.498 2.498 0 11-4.995 0 2.498 2.498 0 014.995 0z"
-                                      fill="#6D4C41"></path>
-                                <g transform="translate(0 19.024)">
-                                    <path d="M23.728 10.985h-7.493a1.25 1.25 0 010-2.498h7.493a1.25 1.25 0 010 2.498z"
-                                          fill="#6D4C41" mask="url(#bgd)"></path>
-                                    <path d="M1.676 9.736c-.428 0-.857-.164-1.186-.49a1.678 1.678 0 010-2.368l9.651-9.652a1.676 1.676 0 012.369 2.37l-9.65 9.65a1.67 1.67 0 01-1.184.49z"
-                                          fill="#BD1E51" mask="url(#bgd)"></path>
-                                </g>
-                                <path d="M22.479 15.024a8.741 8.741 0 11-17.483 0 8.741 8.741 0 018.741-8.741 8.741 8.741 0 018.742 8.74z"
-                                      fill="#BD1E51"></path>
-                                <path d="M16.235 15.024a2.498 2.498 0 11-4.995 0 2.498 2.498 0 014.995 0z"
-                                      fill="#8F0A35"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="service__left-title">
-                        Do you like our service?
-                    </div>
-                    <h1 class="intro__headline">
-                        <span class="color-1"> Boost revenue </span>
-                        <br>
-                        <span class="color-2"> by up to 35 % </span>
-                        <br>
-                        <span class="color-3"> without any risk. </span>
-                    </h1>
-                    <p class="service__left-icon"> Just fill up the form and our sales department will contact you with
-                        a special offer suited to your e‑commerce platform.</p>
-                </div>
-
-                <div class="service__right">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <div class="bgc-gray">
     <div class="container">
@@ -649,6 +596,341 @@
 
     </div>
 </div>
+
+<div class="divider divider--gray">
+    <div class="divider__left">
+    </div>
+    <div class="divider__right">
+    </div>
+</div>
+
+<div class="bgc-purple">
+    <div class="container">
+        <div class="howit howit-purple">
+            <div CLASS="icon-sml">
+                <svg viewBox="0 0 40 40" id="sprite--smile-1" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="nonzero" fill="none">
+                        <circle fill="#FFCA28" cx="20" cy="20" r="20"></circle>
+                        <path d="M27.475 10.025h-15a6.259 6.259 0 00-6.25 6.25 6.259 6.259 0 0011.09 3.968c.03-.038.06-.078.087-.12l2.573-3.128 2.57 3.127c.027.043.055.083.087.123a6.257 6.257 0 0011.093-3.968c0-3.445-2.805-6.252-6.25-6.252z"
+                              fill="#263238"></path>
+                        <path d="M19.975 32.525a1.25 1.25 0 010-2.5c2.688 0 5.195-1.04 7.06-2.93a1.25 1.25 0 011.777 1.758c-2.337 2.37-5.477 3.672-8.837 3.672z"
+                              fill="#6D4C41"></path>
+                    </g>
+                </svg>
+            </div>
+            <span class="algorithm">
+                The implementation of the tool is completely free
+                </span>
+            <h1>
+                Our fee is individually based on a proven added income
+            </h1>
+        </div>
+
+        <div class="service">
+            <div class="service__left">
+                <div class="service__left-icon">
+                    <svg viewBox="0 0 40 40" id="sprite--smile-2" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <path d="M39.961 20.02c0 11.034-8.945 19.98-19.98 19.98S.001 31.054.001 20.02C0 8.983 8.946.038 19.98.038s19.98 8.945 19.98 19.98z"
+                                      fill="#FFCA28" mask="url(#bgb)"></path>
+                            </g>
+                            <path d="M31.22 15.024a2.498 2.498 0 11-4.995 0 2.498 2.498 0 014.995 0z"
+                                  fill="#6D4C41"></path>
+                            <g transform="translate(0 19.024)">
+                                <path d="M23.728 10.985h-7.493a1.25 1.25 0 010-2.498h7.493a1.25 1.25 0 010 2.498z"
+                                      fill="#6D4C41" mask="url(#bgd)"></path>
+                                <path d="M1.676 9.736c-.428 0-.857-.164-1.186-.49a1.678 1.678 0 010-2.368l9.651-9.652a1.676 1.676 0 012.369 2.37l-9.65 9.65a1.67 1.67 0 01-1.184.49z"
+                                      fill="#BD1E51" mask="url(#bgd)"></path>
+                            </g>
+                            <path d="M22.479 15.024a8.741 8.741 0 11-17.483 0 8.741 8.741 0 018.741-8.741 8.741 8.741 0 018.742 8.74z"
+                                  fill="#BD1E51"></path>
+                            <path d="M16.235 15.024a2.498 2.498 0 11-4.995 0 2.498 2.498 0 014.995 0z"
+                                  fill="#8F0A35"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="service__left-title">
+                    Do you like our service?
+                </div>
+                <h1 class="intro__headline">
+                    <span class="color-4"> We can make </span>
+                    <br>
+                    <span class="color-2"> a special offer </span>
+                    <br>
+                    <span class="color-3"> for you. </span>
+                </h1>
+                <p class="service__left-texts"> Just fill up the form and our sales department will contact you with
+                    a special offer suited to your e‑commerce platform.</p>
+            </div>
+
+            <div class="service__right wow animate__fadeOutDown">
+                <div class="form">
+                    <div class="form__row">
+                        <label class="hlabel"> You webpage domain</label>
+                        <input type="text" placeholder=" You webpage domain">
+                    </div>
+                    <div class="form__row">
+                        <label class="hlabel"> Name</label>
+                        <input type="text" placeholder=" Name">
+
+                        <label class="hlabel"> Emal</label>
+                        <input type="email" placeholder=" Email">
+                    </div>
+                    <div class="form__row">
+                        <label class="hlabel"> Name</label>
+                        <input type="text" placeholder=" Name">
+
+                        <label class="hlabel"> Emal</label>
+                        <input type="email" placeholder=" Email">
+                    </div>
+                    <div class="form__row">
+                        <label class="hlabel">Otional Messsage</label>
+                        <textarea placeholder=" Optional message"></textarea>
+                    </div>
+                    <div class="form__row form__info">
+                        <div class="form-alert ">
+                            Enter all required fields
+                        </div><!--form-alert--false-->
+                        <div class="form-alert ">
+                            Your message was sent successfully
+                        </div>
+                        <!-- form-alert--ok  -->
+                    </div>
+                    <div class="form__row form__row--last">
+                        <label class="clabel" for="agree">
+                            <input type="checkbox" name="agree" id="agree" class="clabel__control" required="">
+                            <span class="clabel__check">
+                                <svg viewBox="0 0 12 9" id="sprite--icon-check" xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M10.153.507L4.14 6.38 1.86 4.15a.998.998 0 00-1.406.003.974.974 0 00-.028 1.35L3.353 8.38c.44.432 1.133.431 1.572-.002l6.622-6.489a.976.976 0 00.026-1.353L11.548.51a.988.988 0 00-1.395-.003z"
+                                        fill-rule="evenodd"></path
+                                ></svg>
+                            </span>
+                            <span class="clabel__text">I agree with collecting my personal information for marketing and sales purposes*</span>
+                        </label>
+                        <button form="form" type="submit" class="button button--demo">
+                            Sent request
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider divider--purple">
+    <div class="divider__left">
+    </div>
+    <div class="divider__right">
+    </div>
+</div>
+
+<div class="bgc-light-purple">
+    <div class="container">
+        <div class="decoration">
+            <div class="decoration__content">
+                <div class="decoration__content-1"> Are you an agency?</div>
+                <div class="decoration__content-2"> Let's cooperate..</div>
+                <div class="decoration__content-3">Would you like to boost your clients revenue by using our product? We
+                    can make a special offer for you.
+                </div>
+                <a href="" class="button button--demo">
+                    <i class="fas fa-hands-helping"></i>
+                    Contac Us
+                </a>
+            </div>
+            <div class="decoration__position decoration__position-1">
+                <div class="decoration__point">
+                </div>
+            </div>
+            <div class="decoration__position decoration__position-2">
+                <div class="decoration__point">
+                </div>
+            </div>
+            <div class="decoration__position decoration__position-3">
+                <div class="decoration__point">
+                </div>
+            </div>
+            <div class="decoration__position decoration__position-4">
+                <div class="decoration__point">
+                </div>
+            </div>
+            <div class="decoration__position decoration__position-5">
+                <div class="decoration__point">
+                </div>
+            </div>
+            <div class="decoration__position decoration__position-6">
+                <div class="decoration__point">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="image">
+    <div class="image__main image__main-fst">
+        <div class="image__img">
+            <img src="https://www.persoo.ai/images/places/place-1.jpg" alt="">
+        </div>
+        <div class="image__content">
+            <div class="image__map">
+                <i class="fas fa-map-marker"></i>
+                <p>San Francisco</p>
+            </div>
+            <div class="image__local">
+                <div>
+                    <span> 180 Sansome st</span>
+                    <br>
+                    <span> San Fancisco </span>
+                    <br>
+                    <span> CA 1890 </span>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="image__href"></a>
+    </div>
+    <div class="image__main image__main-sec">
+        <div class="image__img">
+            <img src="https://www.persoo.ai/images/places/place-2.jpg" alt="">
+        </div>
+        <div class="image__content">
+            <div class="image__map">
+                <i class="fas fa-map-marker"></i>
+                <p>San Prague</p>
+            </div>
+            <div class="image__local">
+                <div>
+                    <span> Vinohradská 343/6</span>
+                    <br>
+                    <span> Praha 2 - Vinohrady</span>
+                    <br>
+                    <span> 120 00  </span>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="image__href"></a>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="footer">
+        <div class="footer__col">
+            <div class="footer__logo">
+                <svg viewBox="0 0 150 52" id="sprite--logo-persoo" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M28.908 26.621zM17.665 34.833c-.046-.12-.083-.243-.12-.365.036.122.074.244.12.365zM28.316 26.25zM27.028 25.676c.117.046.233.098.349.15-.116-.052-.232-.104-.349-.15zM17.486 34.109zM27.688 25.932zM18.18 36.191zM30.422 28.031zM17.89 35.526zM29.963 27.517zM29.456 27.046zM22.73 25.594zM23.417 25.436c.065-.015.13-.027.197-.04-.066.013-.132.024-.197.04zM22.079 25.813l.062-.025c-.022.009-.043.016-.062.025zM32.04 31.858a7.436 7.436 0 00-1.21-3.273 7.435 7.435 0 011.198 3.273h.012zM17.41 31.795zM17.753 30.341a.705.705 0 01.035-.096c-.013.032-.027.064-.035.096zM18.032 29.64c.003-.01.01-.02.014-.032l-.014.032zM17.353 32.486c-.001.031.004.06.002.092.003-.09.01-.176.018-.263-.006.057-.016.113-.02.171zM17.383 33.359c-.013-.109-.017-.217-.021-.326.004.11.008.217.021.326zM25.62 25.366zM26.337 25.486zM24.974 25.314c-.033-.002-.066.004-.1.002.098.004.194.012.29.02-.064-.005-.125-.018-.19-.022zM17.544 31.06c.013-.052.03-.102.041-.151-.01.05-.028.1-.041.15zM24.132 25.341c.085-.008.172-.011.26-.016-.088.005-.175.008-.26.016zM29.183 38.639l.014.022a7.44 7.44 0 002.849-5.05h-.018a7.44 7.44 0 01-2.845 5.028zM19.544 38.043c.048.05.095.102.145.15l.004-.006c-.05-.048-.101-.094-.149-.144zM24.707 40.176a7.29 7.29 0 01-3.61-.957l-.007.007a7.268 7.268 0 006.606.325l-.009-.013a7.29 7.29 0 01-2.98.638zM18.977 37.415zM19.464 37.966zM18.548 36.822z"></path>
+                        <path d="M24.46 40.19a7.283 7.283 0 01-3.37-.964l-4.34 6.004a14.544 14.544 0 0014.704.723l-3.758-6.402a7.268 7.268 0 01-3.236.638z"
+                              fill="#F8CA10" fill-rule="nonzero"></path>
+                        <path d="M19.544 38.043a5.652 5.652 0 00-.08-.077 7.515 7.515 0 01-.37-.414 9.928 9.928 0 01-.117-.136 6.708 6.708 0 01-.295-.4c-.046-.065-.093-.128-.134-.194a7.509 7.509 0 01-.232-.386c-.046-.081-.094-.161-.137-.244a7.7 7.7 0 01-.18-.376c-.042-.096-.086-.192-.125-.29a7.56 7.56 0 01-.134-.368 6.764 6.764 0 01-.199-.69c-.027-.12-.055-.238-.079-.359a7.165 7.165 0 01-.052-.352 6.948 6.948 0 01-.046-.398c-.01-.108-.013-.216-.017-.326-.004-.099-.015-.197-.015-.298 0-.053.007-.104.009-.157 0-.032-.003-.06-.002-.091.002-.058.01-.115.015-.172.009-.175.022-.349.044-.52.008-.064.019-.129.03-.192.028-.19.062-.38.104-.563.01-.045.024-.088.032-.13a7.2 7.2 0 01.453-1.29l.011-.024a7.413 7.413 0 014.04-3.802l.05-.02a7.587 7.587 0 011.3-.36c.064-.011.13-.02.196-.03.171-.026.342-.048.517-.061.086-.006.173-.01.261-.013.105-.005.21-.016.315-.016.057 0 .111.006.167.007.033.002.067-.003.1-.001.065.003.125.013.19.017.152.009.304.02.455.039.102.013.205.03.307.047.138.023.276.047.41.079a8.29 8.29 0 01.692.194c.117.039.232.083.348.127.105.041.21.082.312.129.125.056.245.116.363.178.09.044.18.09.265.14.128.071.253.15.376.23.072.046.145.093.215.141.131.092.259.19.384.29l.165.135c.134.114.264.234.39.358.039.037.079.074.117.113.137.14.266.286.392.436.02.027.044.052.066.079.137.17.266.344.39.526.006.01.013.018.02.027a7.436 7.436 0 011.209 3.273h7.374a14.872 14.872 0 00-1.338-5.32 2.545 2.545 0 00-.113-.271c-1.2-2.451-.364-5.654-.364-5.654v-.004l3.125-10.053c.543-1.745-.42-3.608-2.15-4.157a3.284 3.284 0 00-4.123 2.17l-2.778 8.946c-.206.666-.708 1.66-1.74 1.346-1.108-.336-1.005-2.2-1.005-2.2l.442-12.744c.07-2.034-1.506-3.74-3.523-3.81C23.83.034 22.14 1.625 22.07 3.66l-.44 12.755c-.032.886-.276 1.904-1.141 2.103-1.027.238-1.401-1.44-1.45-1.691l-.006-.029v-.004l-1.866-9.53c-.391-1.996-2.312-3.295-4.29-2.902-1.978.393-3.266 2.332-2.876 4.328l2.413 12.333c.428 2.583.184 4.406-.71 5.441-1.249 1.445-2.912 1-2.912 1l-3.097-.952C3.379 25.8.93 27.117.225 29.454c-.705 2.335.6 4.804 2.915 5.516l7.573 2.327a14.96 14.96 0 004.633 6.893l4.342-6.004c-.049-.047-.096-.096-.144-.143z"
+                              fill="#490B3D" fill-rule="nonzero"></path>
+                        <path d="M39.418 33.612h-7.372a7.441 7.441 0 01-2.85 5.049l3.754 6.396a14.872 14.872 0 006.468-11.445z"
+                              fill="#BD1E51" fill-rule="nonzero"></path>
+                        <g fill="#292929" fill-rule="nonzero">
+                            <path d="M52.272 24.337c.645 0 1.181.14 1.601.413.424.28.638.641.638 1.091v1.13c.42-.727 1.066-1.387 1.94-1.978.866-.587 1.902-.882 3.094-.882.92 0 1.791.202 2.61.604.823.4 1.53.951 2.126 1.652a8.258 8.258 0 011.42 2.43c.346.917.52 1.899.52 2.955v3.083c0 1.004-.178 1.97-.539 2.897-.36.93-.84 1.752-1.435 2.466a7.145 7.145 0 01-2.072 1.713 5.105 5.105 0 01-2.481.637c-1.119 0-2.126-.298-3.022-.9-.894-.601-1.516-1.291-1.865-2.07v9.407c0 .4-.241.759-.724 1.074-.485.312-1.065.47-1.739.47-.694 0-1.257-.158-1.694-.47-.437-.315-.655-.674-.655-1.074V25.842c0-.451.218-.813.655-1.092.437-.274.975-.413 1.622-.413m9.138 7.415c0-.427-.086-.843-.26-1.246a3.695 3.695 0 00-.73-1.088 3.464 3.464 0 00-1.082-.775 3.16 3.16 0 00-1.32-.279c-.398 0-.791.072-1.177.225a2.91 2.91 0 00-1.025.678c-.299.3-.542.657-.727 1.07a3.41 3.41 0 00-.282 1.415v3.761c0 .203.08.457.244.77.16.314.394.623.689.921.297.304.647.561 1.047.774.394.214.833.32 1.304.32.447 0 .87-.1 1.266-.3.4-.203.75-.465 1.045-.794.3-.322.544-.697.73-1.108.183-.413.278-.835.278-1.261v-3.083zM76.442 24.11c1.02 0 1.993.174 2.928.528.932.35 1.753.831 2.461 1.447a6.694 6.694 0 011.68 2.221c.409.865.615 1.826.615 2.879 0 .802-.097 1.432-.3 1.882-.2.452-.464.783-.801.996a2.691 2.691 0 01-1.118.398c-.413.049-.827.073-1.251.073h-7.57v.567c0 1.102.395 1.98 1.192 2.631.795.652 1.853.98 3.171.98.624 0 1.155-.076 1.605-.224a9.635 9.635 0 001.191-.49c.35-.178.664-.34.951-.49.288-.15.567-.227.84-.227s.522.077.748.227c.222.15.414.34.579.564.157.229.284.465.372.714.086.252.13.465.13.64 0 .326-.154.673-.465 1.034-.315.364-.754.703-1.323 1.018-.577.312-1.266.573-2.073.772-.809.2-1.708.297-2.705.297-1.316 0-2.53-.18-3.637-.544-1.105-.364-2.058-.884-2.852-1.562a7.196 7.196 0 01-1.866-2.443c-.448-.955-.67-2.008-.67-3.163v-3.198c0-1.001.213-1.962.634-2.879.42-.913 1-1.718 1.734-2.408a8.274 8.274 0 012.592-1.636 8.483 8.483 0 013.208-.603m2.089 7.563c.396 0 .68-.062.839-.188.163-.123.242-.402.242-.826 0-.879-.322-1.594-.97-2.145-.646-.553-1.42-.83-2.31-.83-.847 0-1.6.263-2.257.792-.662.525-.99 1.242-.99 2.144v1.053h5.446zM95.652 28.364c-.548 0-1.074.131-1.587.395-.51.26-.964.634-1.362 1.11-.396.476-.72 1.058-.97 1.748-.247.69-.37 1.464-.37 2.316v6.736c0 .378-.244.726-.728 1.053-.487.33-1.065.489-1.734.489-.697 0-1.265-.159-1.697-.489-.436-.327-.655-.676-.655-1.053V25.841c0-.45.22-.812.655-1.091.432-.274 1-.413 1.697-.413.597 0 1.105.14 1.527.413.423.28.634.641.634 1.091v1.544c.174-.4.419-.796.727-1.185a6.577 6.577 0 011.064-1.053 5.306 5.306 0 011.306-.756c.472-.185.968-.28 1.493-.28h1.155c.447 0 .85.207 1.212.623.361.413.543.907.543 1.485 0 .578-.182 1.077-.543 1.505-.362.427-.765.64-1.212.64h-1.155zM105.985 38.862c1.092 0 1.823-.175 2.18-.528.36-.35.545-.714.545-1.089 0-.552-.222-.979-.657-1.283-.435-.298-.98-.55-1.642-.75-.656-.199-1.368-.407-2.125-.623a9.728 9.728 0 01-2.124-.865 4.756 4.756 0 01-1.643-1.485c-.434-.627-.65-1.466-.65-2.52 0-.676.111-1.349.332-2.013a4.62 4.62 0 011.122-1.79c.519-.525 1.211-.958 2.068-1.297.857-.339 1.909-.508 3.155-.508.742 0 1.478.061 2.2.188.721.126 1.35.295 1.899.508.546.214.988.471 1.325.773.335.3.503.626.503.976 0 .174-.037.396-.113.658-.071.267-.186.521-.333.77-.149.254-.336.468-.56.64a1.173 1.173 0 01-.747.266c-.223 0-.465-.057-.727-.167-.261-.119-.56-.24-.895-.378-.336-.14-.704-.262-1.098-.377-.4-.115-.863-.17-1.384-.17-.943 0-1.615.186-2.01.566-.4.375-.597.75-.597 1.127 0 .452.221.804.667 1.052.45.253 1.004.473 1.66.661.662.19 1.376.388 2.149.602.77.214 1.484.52 2.143.922a5.244 5.244 0 011.661 1.636c.449.69.666 1.588.666 2.69 0 1.682-.587 3.017-1.767 4.01-1.183.99-2.88 1.483-5.09 1.483-.948 0-1.83-.084-2.652-.262-.819-.173-1.534-.413-2.142-.715-.61-.3-1.09-.642-1.435-1.034-.352-.388-.523-.796-.523-1.222 0-.201.038-.427.11-.679a2.39 2.39 0 01.336-.695c.147-.214.324-.397.52-.548.2-.147.411-.223.637-.223.273 0 .54.087.801.261.261.176.579.37.95.587.375.21.816.404 1.324.581.511.175 1.164.264 1.96.264M122.879 24.11c1.07 0 2.099.203 3.077.605.984.4 1.85.951 2.592 1.652a8.095 8.095 0 011.774 2.43c.433.917.653 1.899.653 2.955v3.083c0 1.004-.22 1.97-.653 2.897a8.201 8.201 0 01-1.774 2.466 8.67 8.67 0 01-2.592 1.713 7.62 7.62 0 01-3.077.636 7.74 7.74 0 01-3.115-.636 8.684 8.684 0 01-2.572-1.694 8.112 8.112 0 01-1.753-2.446 6.83 6.83 0 01-.655-2.936v-3.083c0-1.005.213-1.97.635-2.9.424-.928 1-1.744 1.734-2.447a8.437 8.437 0 012.573-1.671 8.009 8.009 0 013.153-.623m3.285 7.641c0-.427-.088-.843-.263-1.246a3.885 3.885 0 00-.71-1.088 3.337 3.337 0 00-1.044-.775c-.4-.185-.819-.279-1.268-.279-.447 0-.87.094-1.267.28-.396.189-.744.448-1.045.774-.299.325-.537.69-.709 1.088-.172.403-.26.819-.26 1.246v3.083c0 .45.088.884.26 1.3.172.413.41.776.709 1.091.301.312.65.57 1.045.772.397.2.82.3 1.267.3.45 0 .869-.1 1.268-.3.4-.203.746-.46 1.044-.772.3-.315.536-.678.71-1.092.175-.415.263-.848.263-1.299v-3.083zM141.044 24.11c1.07 0 2.098.203 3.08.605.981.4 1.847.951 2.593 1.652a8.14 8.14 0 011.77 2.43c.433.917.65 1.899.65 2.955v3.083c0 1.004-.216 1.97-.65 2.897a8.25 8.25 0 01-1.77 2.466 8.758 8.758 0 01-2.593 1.713 7.649 7.649 0 01-3.08.636 7.736 7.736 0 01-3.115-.636 8.631 8.631 0 01-2.57-1.694 8.164 8.164 0 01-1.755-2.446 6.859 6.859 0 01-.655-2.936v-3.083c0-1.005.213-1.97.635-2.9a7.877 7.877 0 011.736-2.447 8.39 8.39 0 012.57-1.671 8.006 8.006 0 013.154-.623m3.285 7.641c0-.427-.09-.843-.262-1.246a3.848 3.848 0 00-.712-1.088 3.303 3.303 0 00-1.041-.775 2.968 2.968 0 00-1.27-.279c-.448 0-.871.094-1.269.28-.396.189-.746.448-1.04.774a3.84 3.84 0 00-.711 1.088 3.13 3.13 0 00-.263 1.246v3.083c0 .45.09.884.263 1.3.173.413.409.776.71 1.091.295.312.645.57 1.041.772.398.2.821.3 1.27.3.448 0 .87-.1 1.269-.3.4-.203.746-.46 1.041-.772a3.54 3.54 0 00.712-1.092c.172-.415.262-.848.262-1.299v-3.083z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="footer__info">
+                We have been helping online stores since 2013.
+            </div>
+            <div class="footer__social">
+                <a class="footer__social-link" href="">
+                    <svg viewBox="0 0 18 17" id="sprite--icon-linkedin" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1.975C0 1.402.203.93.608.558 1.014.186 1.541 0 2.19 0c.637 0 1.153.183 1.547.55.405.377.608.87.608 1.476 0 .55-.197 1.008-.591 1.374-.406.378-.938.567-1.599.567h-.017C1.5 3.967.985 3.777.591 3.4.197 3.022 0 2.547 0 1.975zM.226 17V5.53h3.857V17H.226zm5.994 0h3.857v-6.405c0-.4.047-.71.14-.927.161-.39.408-.719.738-.988s.744-.403 1.242-.403c1.297 0 1.946.864 1.946 2.593V17H18v-6.577c0-1.694-.405-2.98-1.216-3.855-.811-.876-1.882-1.313-3.215-1.313-1.494 0-2.658.635-3.492 1.906v.034h-.017l.017-.034V5.529H6.22c.023.367.035 1.506.035 3.417 0 1.912-.012 4.597-.035 8.054z"
+                              fill-rule="nonzero"></path>
+                    </svg>
+                </a>
+                <a class="footer__social-link footer__social-link-sec" href="">
+                    <svg viewBox="0 0 22 18" id="sprite--icon-youtube" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M.535 15.223c.487 1.84 1.978 2.178 2.077 2.242 2.454.712 14.32.714 16.811 0 1.706-.525 2.019-2.136 2.078-2.242.649-3.68.692-8.477-.03-12.653l.03.208C21.013.937 19.522.6 19.423.535c-2.42-.7-14.324-.727-16.81 0C.905 1.062.592 2.672.534 2.778c-.696 3.867-.73 8.304 0 12.445zM9 12V6l5 3.005L9 12z"
+                              fill-rule="nonzero"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__col">
+            <a href="" class="footer-list"> How it works</a>
+            <a href="" class="footer-list"> Stories</a>
+            <a href="" class="footer-list"> Features</a>
+            <a href="" class="footer-list">Pricing</a>
+            <a href="" class="footer-list">Case studies</a>
+            <a href="" class="footer-list">FAQ</a>
+            <a href="" class="footer-list">Privacy policy</a>
+        </div>
+        <div class="footer__col">
+            <div class="footer__box">
+                <div class="footer__headline">
+                    Ceo
+                </div>
+                <div class="footer__text">
+                    Pavel Pinkas
+                    <br>
+                    +8473467111
+                    <br>
+                    <a href=""> pinkLady@gmail.con</a>
+                </div>
+            </div>
+            <div class="footer__box">
+                <div class="footer__headline">
+                    SALES PARTNER
+                </div>
+                <div class="footer__text">
+                    Jan Chudomelka
+                    <br>
+                    +420 721 252 586
+                    <br>
+                    <a href=""> jan.chudomelka@gmail.comn</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__col">
+            <div class="footer__box">
+                <div class="footer__headline">
+                    TECH SUPPORT
+                </div>
+                <div class="footer__text">
+                    <a href="">support@persoo.cz</a>
+                </div>
+            </div>
+            <div class="footer__box">
+                <div class="footer__headline">
+                    DEVELOPEMENT
+                </div>
+                <div class="footer__text">
+                    Vinohradská 343/6
+                    <br>
+                    120 00 Praha 2 – Vinohrady
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="end">
+    <div class="container">
+        <div class="cfooter">
+            <div class="cfooter__lang">
+                <a href="">
+                    <img src="https://www.persoo.ai/images/flags/cz.png" alt="">
+                </a>
+            </div>
+            <div class="cfooter__content">
+                <span> © Persoo s.r.o. 2013-2020  </span>
+                <span class="dot"></span>
+                <span>  Webdesign by <a href="">  Kennymax </a></span>
+                <span class="dot"></span>
+                <span>  Developer by <a href="">  PragueCoding.cz </a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a id="button" class="show"> </a>
 
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
